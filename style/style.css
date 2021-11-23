@@ -1,0 +1,199 @@
+body {
+	height: 100%;
+	margin: 0;
+	font-family: 'Helvetica', sans-serif;
+    overflow-X: hidden;
+}
+
+#name{
+	font-size: 24px;
+	margin: 10px 0 0 0;
+	font-weight: lighter;
+	text-transform: uppercase;
+	color: #eeeeee;
+}
+
+#aboutTitle{
+    color: white;
+    font-size: 46px;
+    position: absolute;
+    top: 75px;
+}
+
+p {
+	font-size: 12px;
+	font-weight: light;
+	color: #333333;
+}
+
+.pText{
+  font-size: 15px;
+  color: white;
+  padding: 10px;
+  background-color: rgba(66, 66, 66, .3);
+  border: 2px solid rgba(0, 0, 0, .5);
+}
+
+span a {
+	font-size: 18px;
+	color: #cccccc;
+	text-decoration: none;
+	margin: 0 10px;
+	transition: all 0.4s ease-in-out;
+}
+span a:hover{
+  color: #ffffff;
+}
+
+@keyframes float {
+	0% {
+		box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+		transform: translatey(0px);
+	}
+	50% {
+		box-shadow: 0 25px 15px 0px rgba(0,0,0,0.2);
+		transform: translatey(-20px);
+	}
+	100% {
+		box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+	}
+}
+
+.container {
+    background: hsla(168, 76%, 42%, 1);
+    background: linear-gradient(-45deg, hsla(168, 76%, 42%, 1) 0%, hsla(282, 44%, 47%, 1) 100%);
+    background: -moz-linear-gradient(-45deg, hsla(168, 76%, 42%, 1) 0%, hsla(282, 44%, 47%, 1) 100%);
+    background: -webkit-linear-gradient(-45deg, hsla(168, 76%, 42%, 1) 0%, hsla(282, 44%, 47%, 1) 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#1ABC9C", endColorstr="#8E44AD", GradientType=1 );
+  
+	width: 100%;
+    height: 100%;
+	display: flex;
+    position: absolute;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.aboutContainer{
+    background: hsla(168, 76%, 42%, 1);
+    background: linear-gradient(-45deg, hsla(168, 76%, 42%, 1) 0%, hsla(282, 44%, 47%, 1) 100%);
+    background: -moz-linear-gradient(-45deg, hsla(168, 76%, 42%, 1) 0%, hsla(282, 44%, 47%, 1) 100%);
+    background: -webkit-linear-gradient(-45deg, hsla(168, 76%, 42%, 1) 0%, hsla(282, 44%, 47%, 1) 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#1ABC9C", endColorstr="#8E44AD", GradientType=1 );
+  
+	width: 100%;
+    height: 100%;
+	display: flex;
+    position: absolute;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.avatar {
+    background: url("../images/avatar.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+	width: 150px;
+	height: 150px;
+	box-sizing: content-box;
+	border: 5px white solid;
+	border-radius: 50%;
+	overflow: hidden;
+	box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+	animation: float 6s ease-in-out infinite;
+}
+
+.bar{
+    font-family: "Times New Roman", Times, serif;
+    position: absolute;
+    top: 165px;
+    
+    background-image: url("../images/Bar.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 800px;
+    height: 115px;
+}
+.content {
+	width: 100%;
+	max-width: 600px;
+	padding: 20px 40px;
+	box-sizing: border-box;
+	text-align: center;
+}
+
+.navbar{
+    bottom: 5px;
+    height: 50px;
+    width: 300px;
+    gap: 10%;
+    position: absolute;
+    margin-left: auto;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.about{
+    height: 50px;
+    width: 50px;
+    background-size: 35px;
+    border-radius: 50%;
+    background-image: url("../images/aboutMe.png"); 
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.experience{
+    height: 50px;
+    width: 50px;
+    background-size: 35px;
+    border-radius: 50%;
+    background-image: url("../images/experience.png"); 
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.projects{
+    height: 50px;
+    width: 50px;
+    background-size: 35px;
+    border-radius: 50%;
+    background-image: url("../images/projects.png"); 
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.contact{
+    height: 50px;
+    width: 50px;
+    background-size: 35px;
+    border-radius: 50%;
+    background-image: url("../images/contact.png"); 
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.about:hover{
+    background-color: rgba(66, 66, 66, .3);
+    transition: 500ms ease-in-out;
+}
+
+.experience:hover{
+    background-color: rgba(66, 66, 66, .3);
+    transition: 500ms ease-in-out;
+}
+
+.projects:hover{
+    background-color: rgba(66, 66, 66, .3);
+    transition: 500ms ease-in-out;
+}
+
+.contact:hover{
+    background-color: rgba(66, 66, 66, .3);
+    transition: 500ms ease-in-out;
+}
