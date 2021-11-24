@@ -43,10 +43,10 @@ span a {
 	color: #cccccc;
 	text-decoration: none;
 	margin: 0 10px;
-	transition: all 0.4s ease-in-out;
+	transition: all 0.3s ease-in-out;
 }
 span a:hover{
-  color: #ffffff;
+  color: white;
 }
 
 @keyframes float {
@@ -94,7 +94,7 @@ span a:hover{
 	align-items: center; */
     position: absolute;
     top: 150px;
-    width: 100%;
+    left: 200px;
 	max-width: 960px;
 	padding: 20px 40px;
 	box-sizing: border-box;
@@ -134,86 +134,74 @@ span a:hover{
 	text-align: center;
 }
 
-.navbar{
-    bottom: 5px;
-    height: 50px;
-    width: 300px;
-    gap: 10%;
+.next{
+    background: white;
+    opacity: 0.1;
+    border-radius: 50%;
     position: absolute;
-    margin-left: auto;
-    list-style: none;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
+    margin-top: -120px;
+    right: -100px;
+    height: 200px;
+    width: 200px;
 }
 
-.home{
+.next:hover{
+    opacity: 0.3;
+    border: 4px solid grey;
+    transition: 150ms;
+}
+
+#fix{
+    margin-top: 45px;
+}
+
+.back{
+    background: white;
+    opacity: 0.1;
+    border-radius: 50%;
+    position: absolute;
+    margin-top: -120px;
+    left: -100px;
+    height: 200px;
+    width: 200px;
+}
+
+.back:hover{
+    opacity: 0.3;
+    border: 4px solid grey;
+    transition: 150ms;
+}
+
+#right{
+    position: relative;
     height: 50px;
     width: 50px;
-    background-size: 35px;
-    border-radius: 50%;
-    background-image: url("../images/home.png"); 
-    background-repeat: no-repeat;
-    background-position: center;
+    margin-top: 37%;
+    margin-left: 15%;
 }
 
-.about{
+#left{
+    position: relative;
     height: 50px;
     width: 50px;
-    background-size: 35px;
-    border-radius: 50%;
-    background-image: url("../images/aboutMe.png"); 
+    margin-top: 37%;
+    margin-left: 55%;
+}
+
+#circle{
+    background: url("../images/circle.png");
+    background-size: 500px;
     background-repeat: no-repeat;
-    background-position: center;
-}
-
-.experience{
-    height: 50px;
-    width: 50px;
-    background-size: 35px;
     border-radius: 50%;
-    background-image: url("../images/experience.png"); 
-    background-repeat: no-repeat;
-    background-position: center;
+    height: 500px;
+    width: 500px;
+    position: fixed;
+    top: 25%;
+    left: 65%;
+    animation: spin 14s infinite linear;
 }
-
-.projects{
-    height: 50px;
-    width: 50px;
-    background-size: 40px;
-    border-radius: 50%;
-    background-image: url("../images/projects.png"); 
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-.contact{
-    height: 50px;
-    width: 50px;
-    background-size: 35px;
-    border-radius: 50%;
-    background-image: url("../images/contact.png"); 
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-.about:hover{
-    background-color: rgba(66, 66, 66, .3);
-    transition: 500ms ease-in-out;
-}
-
-.experience:hover{
-    background-color: rgba(66, 66, 66, .3);
-    transition: 500ms ease-in-out;
-}
-
-.projects:hover{
-    background-color: rgba(66, 66, 66, .3);
-    transition: 500ms ease-in-out;
-}
-
-.contact:hover{
-    background-color: rgba(66, 66, 66, .3);
-    transition: 500ms ease-in-out;
+@keyframes spin{
+    100%{
+        transform: rotate(360deg);
+    }
 }
