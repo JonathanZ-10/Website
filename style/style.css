@@ -31,10 +31,11 @@ body {
     position: absolute;
     background-color:black;
     opacity: 0.4;
-    height: 10px;
-    width: 40%;
+    height: 2px;
+    border-radius: 15%;
+    width: 100%;
     left: 0;
-    bottom: 50%;
+    bottom: 215px;
 }
 
 p {
@@ -43,10 +44,58 @@ p {
 	color: #333333;
 }
 
+h1{
+    color: white;
+    font-size: 24px;
+}
+
+.column{
+    color: white;
+    font-size: 16px;
+    line-height: 28px;
+}
+
+#languages{
+    position: absolute;
+    margin-top: 100px;
+    left: 300px;
+}
+
+#tools{
+    position: absolute;
+    margin-top: 25px;
+    left: 800px;
+}
+
 .pText{
-  font-size: 15px;
+  font-size: 20px;
+  line-height: 40px;
   color: white;
   padding: 10px;
+}
+
+.pText:after{
+    content:"";
+    position: absolute;
+    background-color:black;
+    opacity: 0.4;
+    height: 2px;
+    border-radius: 15%;
+    width: 100%;
+    left: 0;
+    bottom: 1px;
+}
+
+.pText:before{
+    content:"";
+    position: absolute;
+    background-color:black;
+    opacity: 0.4;
+    height: 2px;
+    border-radius: 15%;
+    width: 100%;
+    left: 0;
+    top: 1px;
 }
 
 span a {
@@ -59,6 +108,7 @@ span a {
 span a:hover{
   color: white;
 }
+
 
 @keyframes float {
 	0% {
@@ -106,7 +156,7 @@ span a:hover{
     position: absolute;
     top: 150px;
     left: 200px;
-	max-width: 960px;
+	max-width: 1280px;
 	padding: 20px 40px;
 	box-sizing: border-box;
 	text-align: left;
@@ -128,15 +178,6 @@ span a:hover{
 	animation: float 6s ease-in-out infinite;
 }
 
-/* .bar{
-    margin-left: 5%;
-    font-family: "Times New Roman", Times, serif;
-    background-image: url("../images/Bar.png");
-    background-repeat: no-repeat;
-    background-size: 100%;
-    width: 800px;
-    height: 115px;
-} */
 .content {
 	width: 100%;
 	max-width: 600px;
@@ -201,14 +242,14 @@ span a:hover{
 
 #circle{
     background: url("../images/circle.png");
-    background-size: 500px;
+    background-size: 400px;
     background-repeat: no-repeat;
     border-radius: 50%;
-    height: 500px;
-    width: 500px;
+    height: 400px;
+    width: 400px;
     position: fixed;
-    top: 25%;
-    left: 65%;
+    top: 30%;
+    left: 70%;
     animation: spin 14s infinite linear;
 }
 @keyframes spin{
