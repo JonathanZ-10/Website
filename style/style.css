@@ -21,9 +21,20 @@ body {
 	color: #eeeeee;
 }
 
-#aboutTitle{
+.aboutTitle{
     color: white;
     font-size: 46px;
+}
+
+.aboutTitle:after{
+    content:"";
+    position: absolute;
+    background-color:black;
+    opacity: 0.4;
+    height: 10px;
+    width: 40%;
+    left: 0;
+    bottom: 50%;
 }
 
 p {
@@ -98,7 +109,7 @@ span a:hover{
 	max-width: 960px;
 	padding: 20px 40px;
 	box-sizing: border-box;
-	text-align: center;
+	text-align: left;
 }
 
 .avatar {
@@ -117,7 +128,7 @@ span a:hover{
 	animation: float 6s ease-in-out infinite;
 }
 
-.bar{
+/* .bar{
     margin-left: 5%;
     font-family: "Times New Roman", Times, serif;
     background-image: url("../images/Bar.png");
@@ -125,7 +136,7 @@ span a:hover{
     background-size: 100%;
     width: 800px;
     height: 115px;
-}
+} */
 .content {
 	width: 100%;
 	max-width: 600px;
