@@ -162,6 +162,14 @@ span a:hover{
 	text-align: left;
 }
 
+.projectContainer{
+    height: 800px;
+    width: 700px;
+    margin-left: 900px;
+    border: 2px solid red;
+    padding: 25px;
+}
+
 .avatar {
     background: url("../images/avatar.png");
     background-repeat: no-repeat;
@@ -238,6 +246,36 @@ span a:hover{
     width: 50px;
     margin-top: 37%;
     margin-left: 55%;
+}
+
+#topL{
+    height: 200px;
+    width:200px;
+    background-size: 10%;
+    background-repeat: no-repeat;
+}
+
+#topR{
+    height: 200px;
+    width:200px;
+    background-size: 10%;
+    background-repeat: no-repeat;
+}
+
+#bottomL{
+    margin-top: 500px;
+    height: 200px;
+    width:200px;
+    background-size: 10%;
+    background-repeat: no-repeat;
+}
+
+#bottomR{
+    
+    height: 200px;
+    width:200px;
+    background-size: 10%;
+    background-repeat: no-repeat;
 }
 
 #circle{
