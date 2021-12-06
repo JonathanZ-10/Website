@@ -19,7 +19,7 @@ Coder & Designer: Jonathan Zamora
 
 ## TODO
 - Final Touches to ensure everything works
-- Scalable to mobile platforms
+- Scalablity to mobile platforms
 
 ## Experience
 From this project I learned much about designing and programming a website purely from sratch only using HTML and CSS. The first challenge I faced was designing the website in my mind before even starting to code. After starting from scratch two times, the third time is the final user-friendly UI we now see. The next hurdle I faced was time management and planning, at the time of this project I was nearing finals for my last semester so I had to manage time between the project and finals without allowing the project length to vastly increase. This was a matter of focusing mainly on my classes and on my sparetime, on coding the website.
