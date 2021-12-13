@@ -125,11 +125,6 @@ span a:hover{
 }
 
 .container {
-    /* background: hsla(168, 76%, 42%, 1);
-    background: linear-gradient(-45deg, hsla(168, 76%, 42%, 1) 0%, hsla(282, 44%, 47%, 1) 100%);
-    background: -moz-linear-gradient(-45deg, hsla(168, 76%, 42%, 1) 0%, hsla(282, 44%, 47%, 1) 100%);
-    background: -webkit-linear-gradient(-45deg, hsla(168, 76%, 42%, 1) 0%, hsla(282, 44%, 47%, 1) 100%);
-    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#1ABC9C", endColorstr="#8E44AD", GradientType=1 ); */
 	width: 100%;
     height: 100%;
 	display: flex;
@@ -140,19 +135,6 @@ span a:hover{
 }
 
 .aboutContent{
-    /* background: hsla(168, 76%, 42%, 1);
-    background: linear-gradient(-45deg, hsla(168, 76%, 42%, 1) 0%, hsla(282, 44%, 47%, 1) 100%);
-    background: -moz-linear-gradient(-45deg, hsla(168, 76%, 42%, 1) 0%, hsla(282, 44%, 47%, 1) 100%);
-    background: -webkit-linear-gradient(-45deg, hsla(168, 76%, 42%, 1) 0%, hsla(282, 44%, 47%, 1) 100%);
-    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#1ABC9C", endColorstr="#8E44AD", GradientType=1 );
-  
-	width: 100%;
-    height: 100%;
-	display: flex;
-    position: absolute;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center; */
     position: absolute;
     top: 150px;
     left: 200px;
@@ -163,11 +145,25 @@ span a:hover{
 }
 
 .projectContainer{
+    position: absolute;
     height: 800px;
     width: 700px;
     margin-left: 900px;
-    border: 2px solid red;
     padding: 25px;
+}
+
+.bottomnavbar{
+    bottom: 5px;
+    height: 50px;
+    width: 300px;
+    gap: 5%;
+    position: absolute;
+    margin-left: auto;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
 }
 
 .avatar {
@@ -232,6 +228,42 @@ span a:hover{
     transition: 150ms;
 }
 
+.resume{
+    position: fixed;
+    top: 93%;
+    left: 92%;
+    height: 45px;
+    width: 45px;
+    background-size: 35px;
+    border-radius: 50%;
+    background-image: url("../images/resume.png"); 
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.resume:hover{
+    background-color: rgba(66, 66, 66, .3);
+    transition: 500ms ease-in-out;
+}
+
+.contact{
+    position: fixed;
+    top: 93%;
+    left: 96%;
+    height: 45px;
+    width: 45px;
+    background-size: 35px;
+    border-radius: 50%;
+    background-image: url("../images/contact.png"); 
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.contact:hover{
+    background-color: rgba(66, 66, 66, .3);
+    transition: 500ms ease-in-out;
+}
+
 #right{
     position: relative;
     height: 50px;
@@ -248,34 +280,68 @@ span a:hover{
     margin-left: 55%;
 }
 
-#topL{
-    height: 200px;
-    width:200px;
-    background-size: 10%;
-    background-repeat: no-repeat;
+.imgContainer{
+    height: 300px;
+    width: 300px;
+}
+
+.imgContainer .text{
+    position: relative;
+    top: -250px;
+    color: white;
+    text-align: center;
+    opacity: 0;
+    z-index: 1;
+}
+
+.text #imgText{
+    color: red;
+}
+
+.imgContainer .overlay{
+    position: absolute;
+    z-index: 1;
+    height: 300px;
+    width: 300px;
+    background: black;
+    opacity: 0;
+    border-radius: 5%;
+}
+
+.projectImg{
+    max-height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 5%;
+}
+
+.imgContainer:hover .overlay{
+    opacity: 0.7;
+    transition: 300ms;
+    border: 2px solid blue;
+}
+
+.imgContainer:hover .text{
+    top: -190px;
+    transition: 300ms;
+    opacity: 1;
 }
 
 #topR{
-    height: 200px;
-    width:200px;
-    background-size: 10%;
-    background-repeat: no-repeat;
+    position: absolute;
+    left: 400px;
+    top: 25px;
 }
 
 #bottomL{
-    margin-top: 500px;
-    height: 200px;
-    width:200px;
-    background-size: 10%;
-    background-repeat: no-repeat;
+    position: absolute;
+    top: 400px;
 }
 
 #bottomR{
-    
-    height: 200px;
-    width:200px;
-    background-size: 10%;
-    background-repeat: no-repeat;
+    position: absolute;
+    left: 400px;
+    top: 400px;
 }
 
 #circle{
@@ -293,5 +359,17 @@ span a:hover{
 @keyframes spin{
     100%{
         transform: rotate(360deg);
+    }
+}
+
+@media only screen and (max-width: 600px){
+    .resume{
+        top: 93%;
+        left: 80%;
+    }
+
+    .contact{
+        top: 93%;
+        left: 90%;
     }
 }
