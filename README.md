@@ -7,7 +7,7 @@ Language: HTML / CSS
 
 IDE: Microsoft Visual Studio Code
 
-Project Length: ~1.5 months
+Project Length: ~2 months
 
 Coder & Designer: Jonathan Zamora
 
