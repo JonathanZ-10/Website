@@ -49,22 +49,36 @@ h1{
     font-size: 24px;
 }
 
+h2{
+    color: white;
+    font-size: 24px;
+    line-height: 0px;
+}
+
 .column{
+    position: absolute;
     color: white;
     font-size: 16px;
-    line-height: 28px;
+    line-height: 60px;
 }
 
-#languages{
-    position: absolute;
-    margin-top: 100px;
-    left: 300px;
+#column1{
+    margin-top: 300px;
+    left: 250px;
 }
 
-#tools{
-    position: absolute;
-    margin-top: 25px;
-    left: 800px;
+#column2{
+    margin-top: 335px;
+    left: 600px;
+}
+
+#column3{
+    margin-top: 335px;
+    left: 900px;
+}
+
+#Tools{
+    margin-top: 5px;
 }
 
 .pText{
@@ -106,9 +120,12 @@ span a {
 	transition: all 0.3s ease-in-out;
 }
 span a:hover{
-  color: white;
+    color: white;
 }
 
+a:link{
+    text-decoration: none;
+}
 
 @keyframes float {
 	0% {
@@ -136,7 +153,7 @@ span a:hover{
 
 .aboutContent{
     position: absolute;
-    top: 150px;
+    top: 125px;
     left: 200px;
 	max-width: 1280px;
 	padding: 20px 40px;
@@ -148,6 +165,7 @@ span a:hover{
     position: absolute;
     height: 800px;
     width: 700px;
+    margin-top: 85px;
     margin-left: 900px;
     padding: 25px;
 }
@@ -329,6 +347,7 @@ span a:hover{
 
 #topR{
     position: absolute;
+    text-decoration: none;
     left: 400px;
     top: 25px;
 }
@@ -355,6 +374,15 @@ span a:hover{
     top: 30%;
     left: 70%;
     animation: spin 14s infinite linear;
+}
+
+#rightGit{
+    float: right;
+}
+
+#red{
+    color: #9e0000a2;
+    font-weight: bold;
 }
 @keyframes spin{
     100%{

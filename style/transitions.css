@@ -6,6 +6,23 @@
     animation: transitionIn 0.75s;
 }
 
+.resume{
+    animation: transitionIn 0.75s;
+}
+
+.contact{
+    animation: transitionIn 0.75s;
+}
+
+.column{
+    animation: transitionIn 0.75s;
+}
+
+.projectContainer
+{
+    animation: transitionIn 0.75s;
+}
+
 @keyframes transitionIn {
     from{
         opacity: 0;
