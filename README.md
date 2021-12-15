@@ -18,7 +18,6 @@ Coder & Designer: Jonathan Zamora
 - Important: Very smooth and interactable UI
 
 ## TODO
-- Final Touches to ensure everything works
 - Scalablity to mobile platforms
 
 ## Experience
