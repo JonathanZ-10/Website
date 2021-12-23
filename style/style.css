@@ -55,6 +55,10 @@ h2{
     line-height: 0px;
 }
 
+#note{
+    display: none;
+}
+
 .column{
     position: absolute;
     color: white;
@@ -63,7 +67,7 @@ h2{
 }
 
 #column1{
-    margin-top: 300px;
+    margin-top: 285px;
     left: 250px;
 }
 
@@ -78,7 +82,7 @@ h2{
 }
 
 #Tools{
-    margin-top: -15px;
+    margin-top: -10px;
 }
 
 .pText{
@@ -159,15 +163,6 @@ a:link{
 	padding: 20px 40px;
 	box-sizing: border-box;
 	text-align: left;
-}
-
-.projectContainer{
-    position: absolute;
-    height: 800px;
-    width: 700px;
-    margin-top: 85px;
-    margin-left: 900px;
-    padding: 25px;
 }
 
 .bottomnavbar{
@@ -345,6 +340,15 @@ a:link{
     opacity: 1;
 }
 
+.projectContainer{
+    position: absolute;
+    height: 800px;
+    width: 700px;
+    margin-top: 85px;
+    margin-left: 900px;
+    padding: 25px;
+}
+
 #topR{
     position: absolute;
     text-decoration: none;
@@ -384,6 +388,7 @@ a:link{
     color: #9e0000a2;
     font-weight: bold;
 }
+
 @keyframes spin{
     100%{
         transform: rotate(360deg);
@@ -400,4 +405,135 @@ a:link{
         top: 93%;
         left: 90%;
     }
-}
+
+    #note{
+        display: flex;
+        position: absolute;
+        top: 890px;
+        left: 150px;
+        color: white;
+        font-size: 10px;
+    }
+
+    .next{
+        margin-top: -100px;
+        height: 150px;
+        width: 150px;
+        right: -80px;
+    }
+
+    #right{
+        height: 50px;
+        width: 50px;
+        margin-top: 35%;
+        margin-left: 18%;
+    }
+
+    .back{
+        margin-top: -100px;
+        left: -80px;
+        height: 150px;
+        width: 150px;
+    }
+
+    #left{
+        height: 50px;
+        width: 50px;
+        margin-top: 35%;
+        margin-left: 48%;
+    }
+
+    #circle{
+        display: none;
+    }
+
+    .aboutContent{
+        padding: 0;
+        max-height: 350px;
+        width: 500px; 
+        top: 25px;
+        left: 25px;
+        font-size: 10px;
+    }
+
+    #aboutText{
+        font-size: 16px;
+        padding-top: 20px;
+        line-height: 35px;
+    }
+
+    h2{
+        font-size: 18px;
+    }
+
+    .column{
+        font-size: 14px;
+    }
+
+    #column1{
+        top: 160px;
+        left: 75px;
+    }
+
+    #column2{
+        top: 142px;
+        left: 250px;
+    }
+
+    #column3{
+        top: 142px;
+        left: 425px;
+    }
+
+    #Tools{
+        margin-top: 0px;
+    }
+
+    .pText{
+        font-size: 16px;
+    }
+
+    .projectContainer{
+        height: 400px;
+        width: 400px;
+        margin-top: 300px;
+        margin-left: 25px;
+    }
+
+    #topR{
+        position: absolute;
+        text-decoration: none;
+        left: 250px;
+        top: 25px;
+    }
+    
+    #bottomL{
+        position: absolute;
+        top: 250px;
+    }
+    
+    #bottomR{
+        position: absolute;
+        left: 250px;
+        top: 250px;
+    }
+
+    .imgContainer{
+        height: 200px;
+        width: 200px;
+    }
+
+    .imgContainer .overlay{
+        height: 200px;
+        width: 200px;
+    }
+
+    .longText{
+        display: none;
+    }
+
+    .notes{
+        font-style: italic;
+        margin-bottom: -15px;
+    }
+} 
