@@ -1,16 +1,15 @@
-html{
+body{
     min-height: 100%;
-}
-
-body {
-    margin: 0;
-	font-family: 'Helvetica', sans-serif;
-    overflow-X: hidden;
+    min-width: 100%;
+    font-family: 'Helvetica', sans-serif;
     background: hsla(168, 76%, 42%, 1);
     background: linear-gradient(-45deg, hsla(168, 76%, 42%, 1) 0%, hsla(282, 44%, 47%, 1) 100%);
     background: -moz-linear-gradient(-45deg, hsla(168, 76%, 42%, 1) 0%, hsla(282, 44%, 47%, 1) 100%);
     background: -webkit-linear-gradient(-45deg, hsla(168, 76%, 42%, 1) 0%, hsla(282, 44%, 47%, 1) 100%);
     filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#1ABC9C", endColorstr="#8E44AD", GradientType=1 );
+    background-repeat: no-repeat;
+    overflow: hidden;
+    margin: 0;
 }
 
 #name{
@@ -153,30 +152,17 @@ a:link{
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+    overflow: hidden;
 }
 
 .aboutContent{
     position: absolute;
-    top: 125px;
+    top: 25px;
     left: 200px;
 	max-width: 1280px;
 	padding: 20px 40px;
 	box-sizing: border-box;
 	text-align: left;
-}
-
-.bottomnavbar{
-    bottom: 5px;
-    height: 50px;
-    width: 300px;
-    gap: 5%;
-    position: absolute;
-    margin-left: auto;
-    list-style: none;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
 }
 
 .avatar {
@@ -185,19 +171,17 @@ a:link{
     background-size: 100% 100%;
 	width: 150px;
 	height: 150px;
-    left: 35%;
+    left: 18%;
 	box-sizing: content-box;
 	border: 5px white solid;
 	border-radius: 50%;
-	overflow: hidden;
     position: relative;
 	box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
 	animation: float 6s ease-in-out infinite;
 }
 
 .content {
-	width: 100%;
-	max-width: 600px;
+	width: 320px;
 	padding: 20px 40px;
 	box-sizing: border-box;
 	text-align: center;
@@ -389,12 +373,130 @@ a:link{
     font-weight: bold;
 }
 
+#mobile{
+    display: none;
+}
+
+.notes br{
+    display: none;
+}
+
+#red br{
+    display: none;
+}
+
 @keyframes spin{
     100%{
         transform: rotate(360deg);
     }
 }
 
+@media only screen and (max-width: 1500px){
+    #circle{
+        display: none;
+    }
+
+    .projectContainer{
+        height: 400px;
+        width: 400px;
+    }
+
+    #topR{
+        left: 250px;
+        top: 25px;
+    }
+    
+    #bottomL{
+        top: 250px;
+    }
+    
+    #bottomR{
+        left: 250px;
+        top: 250px;
+    }
+
+    .imgContainer{
+        height: 200px;
+        width: 200px;
+    }
+
+    .imgContainer .overlay{
+        height: 200px;
+        width: 200px;
+    }
+
+    .imgContainer:hover .text{
+        top: -150px;
+    }
+}
+
+@media only screen and (max-height: 850px){
+    #note{
+        display: flex;
+        position: absolute;
+        top: 95%;
+        left: 40%;
+        color: white;
+        font-size: 10px;
+    }
+}
+
+@media only screen and (max-height: 800px){
+    #pc2{
+        display: none;
+    }
+
+    #languages{
+        display: fixed;
+        top: 400px;
+    }
+}
+
+@media only screen and (max-width: 1350px){
+    #longText{
+        display: none;
+    }
+
+    #aboutContentP{
+        top: 300px;
+    }
+
+    .projectContainer{
+        margin-left: 800px;
+    }
+
+    #note{
+        display: flex;
+        position: absolute;
+        top: 95%;
+        left: 40%;
+        color: white;
+        font-size: 10px;
+    }
+}
+
+@media only screen and (max-width: 1200px){
+    #aboutContentP{
+        top: 25px;
+        left: 25%;
+    }
+
+    .projectContainer{
+        margin-left: 0;
+        margin-top: 350px;
+    }
+}
+
+@media only screen and (max-width: 850px){
+    #aboutContentP{
+        top: 25px;
+        left: 15%;
+    }
+
+    .pText{
+        font-size: 16px;
+    }
+}
 @media only screen and (max-width: 600px){
     .resume{
         top: 93%;
@@ -409,8 +511,8 @@ a:link{
     #note{
         display: flex;
         position: absolute;
-        top: 890px;
-        left: 150px;
+        top: 95%;
+        left: 30%;
         color: white;
         font-size: 10px;
     }
@@ -420,6 +522,7 @@ a:link{
         height: 150px;
         width: 150px;
         right: -80px;
+        z-index: 1;
     }
 
     #right{
@@ -434,6 +537,7 @@ a:link{
         left: -80px;
         height: 150px;
         width: 150px;
+        z-index: 1;
     }
 
     #left{
@@ -456,10 +560,19 @@ a:link{
         font-size: 10px;
     }
 
+    #aboutContentP{
+        left: 15px;
+    }
+
     #aboutText{
         font-size: 16px;
         padding-top: 20px;
         line-height: 35px;
+    }
+
+    #aboutTitle{
+        margin-bottom: -15px;
+        text-decoration: underline;
     }
 
     h2{
@@ -494,46 +607,169 @@ a:link{
     }
 
     .projectContainer{
-        height: 400px;
-        width: 400px;
+        height: 300px;
+        width: 300px;
         margin-top: 300px;
         margin-left: 25px;
     }
 
     #topR{
-        position: absolute;
-        text-decoration: none;
-        left: 250px;
+        left: 200px;
         top: 25px;
     }
     
     #bottomL{
-        position: absolute;
-        top: 250px;
+        top: 200px;
     }
     
     #bottomR{
-        position: absolute;
-        left: 250px;
-        top: 250px;
+        left: 200px;
+        top: 200px;
     }
 
     .imgContainer{
-        height: 200px;
-        width: 200px;
+        height: 150px;
+        width: 150px;
     }
 
     .imgContainer .overlay{
-        height: 200px;
-        width: 200px;
-    }
-
-    .longText{
-        display: none;
+        height: 150px;
+        width: 150px;
     }
 
     .notes{
         font-style: italic;
         margin-bottom: -15px;
     }
+
+    .notes{
+        line-height: 40px;
+    }
+
+    #red{
+        line-height: 25px;
+    }
 } 
+
+@media only screen and (max-width: 500px)
+{
+    #column3{
+        display: none;
+    }
+
+    #mobile{
+        display:inline;
+        line-height: 40px;
+    }
+
+    #pc{
+        display:none;
+    }
+
+    .pText{
+        font-size: 14px;
+    }
+    
+    #red br{
+        display: inline;
+    }
+}
+
+@media only screen and (max-width: 400px)
+{
+    #note{
+        left: 20%;
+    }
+
+    .resume{
+        top: 93%;
+        left: 76%;
+    }
+
+    .contact{
+        top: 93%;
+        left: 88%;
+    }
+    
+    #column1{
+        left: 25px;
+        top: 100px;
+    }
+
+    #column2{
+        left: 200px;
+        top: 50px;
+    }
+
+    #column3{
+        display: none;
+    }
+
+    #Tools{
+        position: absolute;
+        left: 125px;
+    }
+
+    #languages{
+        position: fixed;
+        left: 75px;
+        top: 350px;
+    }
+
+    .projectContainer{
+        height: 200px;
+        width: 200px;
+        margin-top: 300px;
+        margin-left: 0;
+    }
+
+    #topR{
+        left: 150px;
+        top: 25px;
+    }
+    
+    #bottomL{
+        top: 150px;
+    }
+    
+    #bottomR{
+        left: 150px;
+        top: 150px;
+    }
+
+    .imgContainer{
+        height: 100px;
+        width: 100px;
+    }
+
+    .imgContainer .overlay{
+        height: 100px;
+        width: 100px;
+    }
+
+    .notes{
+        line-height: 25px;
+    }
+
+    .notes br{
+        display: inline;
+    }
+}
+
+@media only screen and (max-width: 350px)
+{
+    #note{
+        left: 10%;
+    }
+
+    #mobile{
+        font-size: 14px;
+    }
+}
+
+@media only screen and (max-width: 300px)
+{
+    #note{
+        left: 10%;
+    }
+}

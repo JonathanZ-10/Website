@@ -4,6 +4,7 @@
       <title>About Page</title>
       <link rel="stylesheet" href="../style/style.css">
       <link rel="stylesheet" href="../style/transitions.css">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
     <div class="container">
       <div id="circle"></div>
@@ -11,22 +12,32 @@
       <a href="../index.html"><div class="back"><img src="../images/back.png" id="left"></div></a>
       <div class="aboutContent">
         <div class="pText" id="aboutText">
-          Hello World! My name is Jonathan Zamora and I am an aspiring and passionate software developer. <br>
-          I genuinely enjoy coding and every aspect of  my career, including the difficult challenges. <br>
-          I enjoy a good extensive project and there's nothing I love more than learning and growing. <br>
-          Here's a little bit more about me and I look forward to hearing more about you!
+          <span id="pc">
+            Hello World! My name is Jonathan Zamora and I am an aspiring and passionate software developer. <br>
+            I genuinely enjoy coding and every aspect of  my career, including the difficult challenges. <br>
+            I enjoy a good extensive project and there's nothing I love more than learning and growing. <br>
+            Here's a little more about my skills and I look forward to hearing more about you!
+          </span>
+          <span id="mobile">
+            Hello World! My name is Jonathan Zamora <br>
+            and I am a passionate software developer. <br>
+            I genuinely enjoy all aspects of programming <br>
+            and always take challenges head on. <br>
+            Here is a little more about my skills <br>
+            and I hope to hear more about you!
+          </span>
         </div>
       </div>
       <div class="column" id="column1">
-        <h2>Programming Languages</h2>
+        <h2 id="languages">Programming Languages</h2>
         <b>
           Java  | 4+ yrs <br>
           SQL | 2+ yrs <br>
           JavaScript | 2 yrs <br> <br> 
 
-          <h2 id="Tools">Tools</h2>
+          <span id="pc2"><h2 id="Tools">Tools</h2>
           Eclipse | 4+ yrs <br>
-          Git | 3+ yrs <br>
+          Git | 3+ yrs <br></span>
         </b>
       </div>
       <div class="column" id="column2">
@@ -34,8 +45,8 @@
           Python | 2 yrs <br>
           C# | 1+ yrs <br>
           C++ | 1 yr <br> <br> <p class="space"></p>
-          Unix | 1+ yrs <br>
-          VS Code | 1+ yrs <br>
+          <span id="pc2">Unix | 1+ yrs <br>
+          VS Code | 1+ yrs <br></span>
         </b>
       </div>
       <div class="column" id="column3">
@@ -43,8 +54,8 @@
           HTML | 1 yr <br>
           CSS | 1 yr <br>
           Bash | 1 yr <br> <br> <p id="space"></p>
-          MySQL | 1 yr <br>
-          PostgreSQL | 1 yr <br>
+          <span id="pc2">MySQL | 1 yr <br>
+          PostgreSQL | 1 yr <br></span>
         </b>
       </div>
     </div>
